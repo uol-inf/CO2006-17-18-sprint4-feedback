@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class eMarket.SecurityTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class eMarket.SecurityTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/eMarket.html">eMarket</a> &gt; SecurityTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">66</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">38</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">24.362s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">42%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="authentication-3"></a>
+<h3 class="failures">authentication-3</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: The HttpServletRequest attribute must contain an HttpServletResponse for the attribute javax.servlet.http.HttpServletResponse
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository.getResponse(LazyCsrfTokenRepository.java:92)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository.wrap(LazyCsrfTokenRepository.java:84)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository.generateToken(LazyCsrfTokenRepository.java:58)
+	at org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors$CsrfRequestPostProcessor.postProcessRequest(SecurityMockMvcRequestPostProcessors.java:236)
+	at org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders$FormLoginRequestBuilder.buildRequest(SecurityMockMvcRequestBuilders.java:127)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at eMarket.SecurityTests.authentication-#testId(SecurityTests.groovy:104)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authentication-4"></a>
+<h3 class="failures">authentication-4</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: The HttpServletRequest attribute must contain an HttpServletResponse for the attribute javax.servlet.http.HttpServletResponse
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository.getResponse(LazyCsrfTokenRepository.java:92)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository.wrap(LazyCsrfTokenRepository.java:84)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository.generateToken(LazyCsrfTokenRepository.java:58)
+	at org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors$CsrfRequestPostProcessor.postProcessRequest(SecurityMockMvcRequestPostProcessors.java:236)
+	at org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders$FormLoginRequestBuilder.buildRequest(SecurityMockMvcRequestBuilders.java:127)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at eMarket.SecurityTests.authentication-#testId(SecurityTests.groovy:104)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-11"></a>
+<h3 class="failures">authorization-11</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@7c1fdcf5
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@44297ec0
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@6d254300
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-12"></a>
+<h3 class="failures">authorization-12</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@495aaaa5
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@4ab023ab
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@48caa633
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-15"></a>
+<h3 class="failures">authorization-15</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@2f44a691
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@14bf31cc
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@8acbdfe
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-16"></a>
+<h3 class="failures">authorization-16</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@2fd153fb
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@358c82af
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@3ff6cbee
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-17"></a>
+<h3 class="failures">authorization-17</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@5621d5ad
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@5576cf61
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@701d0412
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-18"></a>
+<h3 class="failures">authorization-18</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@bbb07cc
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@7f7a4fce
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@27ae7a2b
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-19"></a>
+<h3 class="failures">authorization-19</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  200
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@7efb2fca
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@60ae0e97
+|      java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+org.springframework.test.web.servlet.MockMvc$1@33f8ea43
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-20"></a>
+<h3 class="failures">authorization-20</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  200
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@8908652
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@2d1fb196
+|      java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+org.springframework.test.web.servlet.MockMvc$1@abd5a74
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-26"></a>
+<h3 class="failures">authorization-26</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  200
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@59845a5c
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@178f180e
+|      java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+org.springframework.test.web.servlet.MockMvc$1@1ba1bf3e
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-27"></a>
+<h3 class="failures">authorization-27</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  200
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@56592e6c
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@1d948d3
+|      java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+org.springframework.test.web.servlet.MockMvc$1@7a74bb7b
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;200&gt; but was:&lt;403&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-3"></a>
+<h3 class="failures">authorization-3</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@2135027d
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@2db8e5b3
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@5942f74c
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-37"></a>
+<h3 class="failures">authorization-37</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@42268f32
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@6cd8c19c
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@73edabc3
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-4"></a>
+<h3 class="failures">authorization-4</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@bca2493
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@301c565f
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@1281d3e8
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-40"></a>
+<h3 class="failures">authorization-40</h3>
+<span class="code">
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:126)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at eMarket.controller.DealController.dealDelete(DealController.java:67)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 38 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-41"></a>
+<h3 class="failures">authorization-41</h3>
+<span class="code">
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:126)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at eMarket.controller.DealController.dealDelete(DealController.java:67)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 38 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-42"></a>
+<h3 class="failures">authorization-42</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@7296b7c7
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@3d74942b
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@2882f7c5
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-43"></a>
+<h3 class="failures">authorization-43</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@1f4441fc
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@1f5f8dd0
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@5830219e
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-44"></a>
+<h3 class="failures">authorization-44</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@524d5b61
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@38db8c84
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@52d767c
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-47"></a>
+<h3 class="failures">authorization-47</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@5bfd8600
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@7c98f058
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@44362dec
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-48"></a>
+<h3 class="failures">authorization-48</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@3b9f461
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@6bf834ae
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@5c0264a8
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-49"></a>
+<h3 class="failures">authorization-49</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@18a4a8a8
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@57bfd22b
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@1b6937db
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-5"></a>
+<h3 class="failures">authorization-5</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@62d990d7
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@1014195e
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@4a204235
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-52"></a>
+<h3 class="failures">authorization-52</h3>
+<span class="code">
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:126)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at eMarket.controller.DealController.dealDelete(DealController.java:67)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 38 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-53"></a>
+<h3 class="failures">authorization-53</h3>
+<span class="code">
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:126)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at eMarket.controller.DealController.dealDelete(DealController.java:67)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 38 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-54"></a>
+<h3 class="failures">authorization-54</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@38ebfc15
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@80c907
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@65836037
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-55"></a>
+<h3 class="failures">authorization-55</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@81b9c51
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@54acc6c6
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@33408fef
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-56"></a>
+<h3 class="failures">authorization-56</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@5672e53f
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@19dda028
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@4d7054c3
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-59"></a>
+<h3 class="failures">authorization-59</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@19e4e93d
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@12078b7b
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@539dc72a
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-6"></a>
+<h3 class="failures">authorization-6</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@5dce9d71
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@4e17f9ee
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@60e6820d
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-60"></a>
+<h3 class="failures">authorization-60</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@22a0a7f0
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@3c596f99
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@24ac3ec
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-74"></a>
+<h3 class="failures">authorization-74</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@4062dff1
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@4cd35bed
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@6bebfe47
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-75"></a>
+<h3 class="failures">authorization-75</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@2c43d5db
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@234f3cd0
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@7584f8c6
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-78"></a>
+<h3 class="failures">authorization-78</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@20ac9bab
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@436f25bb
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@7130db4b
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-79"></a>
+<h3 class="failures">authorization-79</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@c6e5c26
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@1cd0d4cb
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@58e57dbf
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-80"></a>
+<h3 class="failures">authorization-80</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@42ef2b55
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@176c2cf4
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@699dd28d
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="authorization-81"></a>
+<h3 class="failures">authorization-81</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+result.andExpect(status().is(statusCode)) .andExpect(authenticated().withUsername(username).withRoles(role))
+|      |         |        |  |
+|      |         |        |  403
+|      |         |        org.springframework.test.web.servlet.result.StatusResultMatchers$2@45c39da8
+|      |         org.springframework.test.web.servlet.result.StatusResultMatchers@722cea76
+|      java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+org.springframework.test.web.servlet.MockMvc$1@4922d584
+
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:134)
+Caused by: java.lang.AssertionError: Response status expected:&lt;403&gt; but was:&lt;200&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$2.match(StatusResultMatchers.java:69)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at eMarket.SecurityTests.authorization-#testId(SecurityTests.groovy:133)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">authentication-3</td>
+<td>0.266s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authentication-4</td>
+<td>0.251s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-1</td>
+<td>0.293s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-10</td>
+<td>0.265s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-11</td>
+<td>0.248s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-12</td>
+<td>0.275s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-13</td>
+<td>0.285s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-14</td>
+<td>0.268s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-15</td>
+<td>0.273s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-16</td>
+<td>0.280s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-17</td>
+<td>0.281s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-18</td>
+<td>0.264s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-19</td>
+<td>0.273s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-2</td>
+<td>0.262s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-20</td>
+<td>0.264s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-21</td>
+<td>0.252s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-22</td>
+<td>0.256s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-23</td>
+<td>0.275s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-24</td>
+<td>0.267s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-25</td>
+<td>0.270s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-26</td>
+<td>0.274s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-27</td>
+<td>0.271s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-3</td>
+<td>0.264s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-37</td>
+<td>0.273s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-38</td>
+<td>0.283s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-39</td>
+<td>0.273s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-4</td>
+<td>0.251s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-40</td>
+<td>0.290s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-41</td>
+<td>0.275s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-42</td>
+<td>0.453s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-43</td>
+<td>0.280s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-44</td>
+<td>0.262s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-45</td>
+<td>0.249s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-46</td>
+<td>0.273s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-47</td>
+<td>0.290s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-48</td>
+<td>0.262s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-49</td>
+<td>0.247s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-5</td>
+<td>0.257s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-50</td>
+<td>0.272s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-51</td>
+<td>0.280s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-52</td>
+<td>0.282s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-53</td>
+<td>0.273s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-54</td>
+<td>0.292s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-55</td>
+<td>0.251s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-56</td>
+<td>0.270s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-57</td>
+<td>0.253s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-58</td>
+<td>0.286s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-59</td>
+<td>0.263s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-6</td>
+<td>0.260s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-60</td>
+<td>0.260s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-7</td>
+<td>0.261s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-70</td>
+<td>0.264s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-71</td>
+<td>0.251s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-72</td>
+<td>0.253s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-73</td>
+<td>0.270s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-74</td>
+<td>0.274s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-75</td>
+<td>0.263s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-76</td>
+<td>0.260s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">authorization-77</td>
+<td>0.265s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-78</td>
+<td>0.288s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-79</td>
+<td>0.272s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-8</td>
+<td>0.269s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">authorization-80</td>
+<td>0.274s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">authorization-81</td>
+<td>0.281s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">authorization-9</td>
+<td>0.271s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">secureChannel</td>
+<td>6.709s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>02:35:55.492 [Test worker] DEBUG com.athaydes.spockframework.report.SpockReportExtension - Configuring com.athaydes.spockframework.report.SpockReportExtension
+02:35:55.530 [Test worker] INFO com.athaydes.spockframework.report.internal.ConfigLoader - SpockReports config loaded: {com.athaydes.spockframework.report.showCodeBlocks=false, com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension=md, com.athaydes.spockframework.report.testSourceRoots=src/test/groovy, com.athaydes.spockframework.report.IReportCreator=com.athaydes.spockframework.report.internal.HtmlReportCreator, com.athaydes.spockframework.report.outputDir=build/spock-reports, com.athaydes.spockframework.report.internal.HtmlReportCreator.inlineCss=true, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss=spock-feature-report.css, com.athaydes.spockframework.report.hideEmptyBlocks=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss=spock-summary-report.css, com.athaydes.spockframework.report.projectVersion=Unknown, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile=/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile=/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.excludeToc=false, com.athaydes.spockframework.report.template.TemplateReportCreator.enabled=true, com.athaydes.spockframework.report.projectName=, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName=summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.printThrowableStackTrace=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.enabled=true}
+02:35:55.601 [Test worker] DEBUG com.athaydes.spockframework.report.SpockReportExtension - Loading settings for reportCreator of type com.athaydes.spockframework.report.internal.HtmlReportCreator
+02:35:55.710 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.SecurityTests]
+02:35:55.710 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.SecurityTests]
+02:35:55.711 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.SecurityTests]
+02:35:55.711 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.SecurityTests]
+02:35:55.712 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.SecurityTests]
+02:35:55.712 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.SecurityTests]
+02:35:55.714 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.SecurityTests]
+02:35:55.714 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.SecurityTests]
+02:35:55.721 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+02:35:55.727 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+02:35:55.729 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [eMarket.SecurityTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+02:35:55.784 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [eMarket.SecurityTests], using SpringBootContextLoader
+02:35:55.788 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [eMarket.SecurityTests]: class path resource [eMarket/SecurityTests-context.xml] does not exist
+02:35:55.788 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [eMarket.SecurityTests]: class path resource [eMarket/SecurityTestsContext.groovy] does not exist
+02:35:55.788 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [eMarket.SecurityTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+02:35:55.846 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [eMarket.SecurityTests]
+02:35:55.862 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [eMarket.SecurityTests]: using defaults.
+02:35:55.864 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+02:35:55.886 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@51958bb4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2176d8c9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c149c52, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6b1df71a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@16a819e6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@10f3b6a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6991c115, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6db04e1a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3b811d63, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@432db512, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@24535d0b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4bfc0705, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7825611c]
+02:35:55.929 [Test worker] DEBUG com.athaydes.spockframework.report.SpecInfoListener - Before spec: eMarket.SecurityTests
+02:35:55.933 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4b35e8e testClass = SecurityTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@496d3a39 testClass = SecurityTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.SecurityConfig, class eMarket.WebConfig, class eMarket.controller.SignupController, class eMarket.controller.LoginController, class eMarket.controller.IndexController, class eMarket.controller.DealController, class eMarket.controller.OrderController, class eMarket.services.CustomUserDetailsService, class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.SecurityConfig, class eMarket.WebConfig, class eMarket.controller.SignupController, class eMarket.controller.LoginController, class eMarket.controller.IndexController, class eMarket.controller.DealController, class eMarket.controller.OrderController, class eMarket.services.CustomUserDetailsService}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@7cd6c9f4 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@4b69387, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@76dc5bb7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@547d8907, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@381896e4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e84f8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2f4816d5], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+02:35:55.937 [Test worker] DEBUG com.athaydes.spockframework.report.SpecInfoListener - Before feature: secureChannel
+02:35:55.944 [Test worker] DEBUG com.athaydes.spockframework.report.SpecInfoListener - Before iteration: secureChannel
+02:35:55.946 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4b35e8e testClass = SecurityTests, testInstance = eMarket.SecurityTests@193900c1, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@496d3a39 testClass = SecurityTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.SecurityConfig, class eMarket.WebConfig, class eMarket.controller.SignupController, class eMarket.controller.LoginController, class eMarket.controller.IndexController, class eMarket.controller.DealController, class eMarket.controller.OrderController, class eMarket.services.CustomUserDetailsService, class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.SecurityConfig, class eMarket.WebConfig, class eMarket.controller.SignupController, class eMarket.controller.LoginController, class eMarket.controller.IndexController, class eMarket.controller.DealController, class eMarket.controller.OrderController, class eMarket.services.CustomUserDetailsService}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@7cd6c9f4 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@4b69387, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@76dc5bb7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@547d8907, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@381896e4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e84f8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2f4816d5], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+02:35:56.010 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:35:56.010 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:35:56.011 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+02:35:56.012 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+02:35:56.012 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2017-12-18 02:35:56.348  INFO 53223 --- [    Test worker] eMarket.SecurityTests                    : Starting SecurityTests on pc1276 with PID 53223 (/Users/ab373/Documents/ArturData/WORK/ECLIPSE/LECTURES/2017-18/CO2006_marking/sprint4_marking/CO2006-17-18-OliverM88/sprint4/miniproject.security/build/classes/test started by ab373 in /Users/ab373/Documents/ArturData/WORK/ECLIPSE/LECTURES/2017-18/CO2006_marking/sprint4_marking/CO2006-17-18-OliverM88/sprint4/miniproject.security)
+2017-12-18 02:35:56.351  INFO 53223 --- [    Test worker] eMarket.SecurityTests                    : No active profile set, falling back to default profiles: default
+2017-12-18 02:35:56.399  INFO 53223 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f11f1d1: startup date [Mon Dec 18 02:35:56 GMT 2017]; root of context hierarchy
+2017-12-18 02:35:58.248  INFO 53223 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (https)
+2017-12-18 02:35:58.263  INFO 53223 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-18 02:35:58.264  INFO 53223 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-12-18 02:35:58.480  INFO 53223 --- [ost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-12-18 02:35:58.484  INFO 53223 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-18 02:35:58.484  INFO 53223 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2087 ms
+2017-12-18 02:35:58.645  INFO 53223 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-18 02:35:58.646  INFO 53223 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-18 02:35:58.646  INFO 53223 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-18 02:35:58.647  INFO 53223 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-18 02:35:58.648  INFO 53223 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-18 02:35:58.648  INFO 53223 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-18 02:35:58.691  INFO 53223 --- [    Test worker] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-18 02:35:59.104  INFO 53223 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-18 02:35:59.125  INFO 53223 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-18 02:35:59.203  INFO 53223 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-18 02:35:59.204  INFO 53223 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-18 02:35:59.206  INFO 53223 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-18 02:35:59.253  INFO 53223 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-18 02:35:59.395  INFO 53223 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-18 02:36:00.178  INFO 53223 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-12-18 02:36:00.193 ERROR 53223 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table users drop foreign key FK4c6vlshk8x83ifeoggi3exg3k
+2017-12-18 02:36:00.193 ERROR 53223 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'ab373.users' doesn't exist
+2017-12-18 02:36:00.291  INFO 53223 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-12-18 02:36:00.346  INFO 53223 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-18 02:36:01.261  INFO 53223 --- [    Test worker] o.s.s.w.a.c.ChannelProcessingFilter      : Validated configuration attributes
+2017-12-18 02:36:01.266  INFO 53223 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@32e084a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d1d2630, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fc11252, org.springframework.security.web.header.HeaderWriterFilter@362e44b6, org.springframework.security.web.csrf.CsrfFilter@723ffd38, org.springframework.security.web.authentication.logout.LogoutFilter@3e5c58ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c148f26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@577f12b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@718f6caf, org.springframework.security.web.session.SessionManagementFilter@56f44898, org.springframework.security.web.access.ExceptionTranslationFilter@52138dc]
+2017-12-18 02:36:01.331  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:01.331  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:01.412  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/signup/],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.SignupController.signup(eMarket.domain.UserInfo,org.springframework.ui.Model)
+2017-12-18 02:36:01.413  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/signup/add],methods=[POST],params=[add]}&quot; onto public java.lang.String eMarket.controller.SignupController.addNewUser(eMarket.domain.UserInfo,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2017-12-18 02:36:01.414  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/signup/add],methods=[POST],params=[cancel]}&quot; onto public java.lang.String eMarket.controller.SignupController.cancelNewUser(eMarket.domain.UserInfo,org.springframework.ui.Model)
+2017-12-18 02:36:01.414  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/access-denied]}&quot; onto public java.lang.String eMarket.controller.LoginController.accessDenied()
+2017-12-18 02:36:01.415  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/login-form],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.LoginController.login(eMarket.domain.UserInfoLogin)
+2017-12-18 02:36:01.415  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.LoginController.landing()
+2017-12-18 02:36:01.415  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/success-login],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.LoginController.authenticate()
+2017-12-18 02:36:01.416  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/system]}&quot; onto public java.lang.String eMarket.controller.IndexController.index(eMarket.controller.IndexFormDto)
+2017-12-18 02:36:01.416  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/setDate],methods=[POST]}&quot; onto public java.lang.String eMarket.controller.IndexController.setDate(eMarket.controller.IndexFormDto,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2017-12-18 02:36:01.418  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/deal/],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.DealController.main(org.springframework.ui.Model)
+2017-12-18 02:36:01.418  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/deal/add],methods=[POST]}&quot; onto public java.lang.String eMarket.controller.DealController.dealAdd(eMarket.controller.DealFormDto,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2017-12-18 02:36:01.419  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/deal/delete],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.DealController.dealDelete(int,org.springframework.ui.Model)
+2017-12-18 02:36:01.432  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/order]}&quot; onto public java.lang.String eMarket.controller.OrderController.order()
+2017-12-18 02:36:01.433  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/system/user]}&quot; onto public java.lang.String eMarket.controller.OrderController.user()
+2017-12-18 02:36:01.433  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/system/premium]}&quot; onto public java.lang.String eMarket.controller.OrderController.premium()
+2017-12-18 02:36:01.434  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/order/wishlist]}&quot; onto public java.lang.String eMarket.controller.OrderController.wishlist()
+2017-12-18 02:36:01.436  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product/]}&quot; onto public java.lang.String eMarket.controller.ProductController.index(org.springframework.ui.Model)
+2017-12-18 02:36:01.437  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product/productDetail],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.ProductController.productDetail(eMarket.domain.Product,org.springframework.validation.BindingResult,int)
+2017-12-18 02:36:01.437  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product/add],methods=[POST]}&quot; onto public java.lang.String eMarket.controller.ProductController.productMaster(eMarket.domain.Product,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2017-12-18 02:36:01.437  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/product/delete],methods=[GET]}&quot; onto public java.lang.String eMarket.controller.ProductController.productMaster(int,org.springframework.ui.Model)
+2017-12-18 02:36:01.441  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-18 02:36:01.442  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-18 02:36:01.471  INFO 53223 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-18 02:36:01.471  INFO 53223 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-18 02:36:01.471  INFO 53223 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-18 02:36:01.485  INFO 53223 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-18 02:36:01.584  INFO 53223 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f11f1d1: startup date [Mon Dec 18 02:35:56 GMT 2017]; root of context hierarchy
+2017-12-18 02:36:01.665  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 334 ms
+2017-12-18 02:36:02.252  INFO 53223 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (https)
+2017-12-18 02:36:02.269  INFO 53223 --- [    Test worker] eMarket.SecurityTests                    : Started SecurityTests in 6.253 seconds (JVM running for 8.297)
+2017-12-18 02:36:02.316  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:02.316  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:02.318  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:02.655  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:02.655  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:02.658  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:02.921  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:02.921  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:02.923  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:03.172  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:03.173  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:03.175  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:03.467  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:03.467  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:03.470  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:03.730  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:03.730  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:03.732  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:03.996  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:03.997  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:03.999  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:04.246  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:04.246  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:04.249  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:04.503  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:04.503  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:04.505  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:04.763  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:04.764  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:04.766  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:05.025  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:05.025  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:05.027  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:05.294  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:05.294  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:05.297  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:05.565  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:05.565  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:05.567  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:05.830  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:05.830  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:05.833  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:06.079  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:06.079  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:06.083  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:06.356  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:06.356  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:06.359  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:06.641  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:06.641  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:06.643  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:06.908  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:06.908  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:06.910  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:07.181  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:07.181  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:07.184  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:07.463  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:07.463  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:07.465  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:07.744  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:07.744  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:07.746  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:08.008  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:08.009  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:08.011  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:08.282  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:08.283  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:08.285  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:08.545  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:08.546  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:08.548  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:08.798  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:08.798  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:08.800  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:09.055  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:09.055  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:09.057  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2017-12-18 02:36:09.331  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:09.331  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:09.334  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:09.598  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:09.599  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:09.601  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:09.869  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:09.869  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:09.872  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:10.144  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:10.144  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:10.147  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:10.415  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:10.415  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:10.418  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2017-12-18 02:36:10.688  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:10.688  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:10.690  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:10.971  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:10.971  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:10.973  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:11.244  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:11.244  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:11.246  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:11.534  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:11.534  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:11.536  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:11.809  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:11.809  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:11.811  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:12.099  INFO 53223 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-12-18 02:36:12.262  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:12.263  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:12.265  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:12.544  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:12.545  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:12.547  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:12.806  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:12.807  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:12.809  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:13.055  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:13.055  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:13.058  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:13.329  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:13.329  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:13.331  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:13.619  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:13.620  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:13.622  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:13.882  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:13.882  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:13.884  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:14.129  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:14.129  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:14.131  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:14.401  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:14.401  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:14.403  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:14.681  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:14.682  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:14.684  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:14.964  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:14.965  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:14.967  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:15.238  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:15.238  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:15.240  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:15.530  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:15.530  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:15.532  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:15.781  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:15.781  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:15.783  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:16.052  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:16.053  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:16.055  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:16.305  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:16.306  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:16.307  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2017-12-18 02:36:16.591  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:16.591  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:16.593  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:16.855  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:16.855  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:16.857  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:17.115  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:17.115  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:17.117  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:17.378  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:17.378  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:17.380  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:17.629  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:17.629  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:17.631  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:17.882  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:17.882  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:17.884  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:18.152  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:18.152  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:18.154  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:18.427  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:18.427  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:18.429  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:18.689  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:18.689  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:18.691  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2017-12-18 02:36:18.950  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:18.950  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:18.952  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:19.216  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:19.216  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:19.219  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:19.505  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:19.506  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:19.508  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:19.777  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:19.777  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:19.779  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2017-12-18 02:36:20.051  INFO 53223 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2017-12-18 02:36:20.052  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-12-18 02:36:20.053  INFO 53223 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.5</a> at 18-Dec-2017 02:36:20</p>
+</div>
+</div>
+</body>
+</html>

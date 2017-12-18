@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class eMarket.CheckpointSpringDataTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class eMarket.CheckpointSpringDataTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/eMarket.html">eMarket</a> &gt; CheckpointSpringDataTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">6</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.488s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">14%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Department 1"></a>
+<h3 class="failures">Department 1</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+d.getName() == deptName
+| |         |  |
+| Infomatits|  Informatics
+|           false
+|           2 differences (81% similarity)
+|           Info(-)mati(t)s
+|           Info(r)mati(c)s
+eMarket.department.Department@151eee8b
+
+	at eMarket.CheckpointSpringDataTests.Department #description(CheckpointSpringDataTests.groovy:59)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Module 1"></a>
+<h3 class="failures">Module 1</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  User Interfaces and HCI
+| |          false
+| |          3 differences (86% similarity)
+| |          User Interface(-) and H(ci)
+| |          User Interface(s) and H(CI)
+| User Interface and Hci
+eMarket.department.Module@7148dfec
+
+	at eMarket.CheckpointSpringDataTests.Module #description(CheckpointSpringDataTests.groovy:70)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Module 2"></a>
+<h3 class="failures">Module 2</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  Software Engineering and System Development
+| |          false
+| |          2 differences (95% similarity)
+| |          Software Engineering and System Dev(o)l(e)pment
+| |          Software Engineering and System Dev(e)l(o)pment
+| Software Engineering and System Devolepment
+eMarket.department.Module@3f9fe555
+
+	at eMarket.CheckpointSpringDataTests.Module #description(CheckpointSpringDataTests.groovy:70)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Module 3"></a>
+<h3 class="failures">Module 3</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  Automata, Languages and Computation
+| |          false
+| |          1 difference (97% similarity)
+| |          Automata, Language(-) and Computation
+| |          Automata, Language(s) and Computation
+| Automata, Language and Computation
+eMarket.department.Module@48ed6d06
+
+	at eMarket.CheckpointSpringDataTests.Module #description(CheckpointSpringDataTests.groovy:70)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Module 4"></a>
+<h3 class="failures">Module 4</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  Software Project Management and Professionalism
+| |          false
+| |          1 difference (97% similarity)
+| |          Soft(-)are Project Management and Professionalism
+| |          Soft(w)are Project Management and Professionalism
+| Softare Project Management and Professionalism
+eMarket.department.Module@6e8f3810
+
+	at eMarket.CheckpointSpringDataTests.Module #description(CheckpointSpringDataTests.groovy:70)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Modules in departments"></a>
+<h3 class="failures">Modules in departments</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+d.getModuleList().size() == noModules
+| |               |      |  |
+| []              0      |  4
+|                        false
+eMarket.department.Department@1e64bcb
+
+	at eMarket.CheckpointSpringDataTests.Modules in departments(CheckpointSpringDataTests.groovy:83)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Department 1</td>
+<td>4.377s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Department 2</td>
+<td>0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Module 1</td>
+<td>0.018s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Module 2</td>
+<td>0.013s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Module 3</td>
+<td>0.013s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Module 4</td>
+<td>0.015s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Modules in departments</td>
+<td>0.034s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:32:16.973 [Test worker] DEBUG com.athaydes.spockframework.report.SpockReportExtension - Configuring com.athaydes.spockframework.report.SpockReportExtension
+00:32:17.011 [Test worker] INFO com.athaydes.spockframework.report.internal.ConfigLoader - SpockReports config loaded: {com.athaydes.spockframework.report.showCodeBlocks=false, com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension=md, com.athaydes.spockframework.report.testSourceRoots=src/test/groovy, com.athaydes.spockframework.report.IReportCreator=com.athaydes.spockframework.report.internal.HtmlReportCreator, com.athaydes.spockframework.report.outputDir=build/spock-reports, com.athaydes.spockframework.report.internal.HtmlReportCreator.inlineCss=true, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss=spock-feature-report.css, com.athaydes.spockframework.report.hideEmptyBlocks=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss=spock-summary-report.css, com.athaydes.spockframework.report.projectVersion=Unknown, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile=/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile=/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.excludeToc=false, com.athaydes.spockframework.report.template.TemplateReportCreator.enabled=true, com.athaydes.spockframework.report.projectName=, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName=summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.printThrowableStackTrace=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.enabled=true}
+00:32:17.082 [Test worker] DEBUG com.athaydes.spockframework.report.SpockReportExtension - Loading settings for reportCreator of type com.athaydes.spockframework.report.internal.HtmlReportCreator
+00:32:17.178 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.CheckpointSpringDataTests]
+00:32:17.179 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.CheckpointSpringDataTests]
+00:32:17.179 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.CheckpointSpringDataTests]
+00:32:17.179 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.CheckpointSpringDataTests]
+00:32:17.183 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.CheckpointSpringDataTests]
+00:32:17.183 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.CheckpointSpringDataTests]
+00:32:17.183 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [eMarket.CheckpointSpringDataTests]
+00:32:17.183 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [eMarket.CheckpointSpringDataTests]
+00:32:17.194 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:32:17.201 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:32:17.205 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [eMarket.CheckpointSpringDataTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:32:17.217 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [eMarket.CheckpointSpringDataTests], using SpringBootContextLoader
+00:32:17.221 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [eMarket.CheckpointSpringDataTests]: class path resource [eMarket/CheckpointSpringDataTests-context.xml] does not exist
+00:32:17.221 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [eMarket.CheckpointSpringDataTests]: class path resource [eMarket/CheckpointSpringDataTestsContext.groovy] does not exist
+00:32:17.221 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [eMarket.CheckpointSpringDataTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:32:17.346 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [eMarket.CheckpointSpringDataTests]
+00:32:17.361 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [eMarket.CheckpointSpringDataTests]: using defaults.
+00:32:17.363 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+00:32:17.384 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c210397, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b330d30, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@8a53e1b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@be971bd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f40f6ec, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c3932b9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1d4d96c3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d69784e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@45060299, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30df5c7a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41d52f2c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@57e89450]
+00:32:17.430 [Test worker] DEBUG com.athaydes.spockframework.report.SpecInfoListener - Before spec: eMarket.CheckpointSpringDataTests
+00:32:17.436 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+00:32:17.440 [Test worker] DEBUG com.athaydes.spockframework.report.SpecInfoListener - Before feature: Department #description
+00:32:17.446 [Test worker] DEBUG com.athaydes.spockframework.report.SpecInfoListener - Before iteration: Department 1
+00:32:17.526 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+00:32:17.526 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+00:32:17.527 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+00:32:17.530 [Test worker] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+00:32:17.536 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+00:32:17.536 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2017-12-18 00:32:17.885  INFO 47661 --- [    Test worker] eMarket.CheckpointSpringDataTests        : Starting CheckpointSpringDataTests on pc1276 with PID 47661 (/Users/ab373/Documents/ArturData/WORK/ECLIPSE/LECTURES/2017-18/CO2006_marking/sprint4_marking/CO2006-17-18-11p5/sprint4/checkpoint/springData/build/classes/groovy/test started by ab373 in /Users/ab373/Documents/ArturData/WORK/ECLIPSE/LECTURES/2017-18/CO2006_marking/sprint4_marking/CO2006-17-18-11p5/sprint4/checkpoint/springData)
+2017-12-18 00:32:17.887  INFO 47661 --- [    Test worker] eMarket.CheckpointSpringDataTests        : No active profile set, falling back to default profiles: default
+2017-12-18 00:32:17.922  INFO 47661 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1a3d6a79: startup date [Mon Dec 18 00:32:17 GMT 2017]; root of context hierarchy
+2017-12-18 00:32:18.852  INFO 47661 --- [    Test worker] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-18 00:32:19.427  INFO 47661 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-18 00:32:19.453  INFO 47661 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-18 00:32:19.555  INFO 47661 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-18 00:32:19.557  INFO 47661 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-18 00:32:19.560  INFO 47661 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-18 00:32:19.616  INFO 47661 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-18 00:32:19.779  INFO 47661 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-18 00:32:20.420  INFO 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+Hibernate: alter table deal drop foreign key FKspl0n530r3dkep2i9cuui9ubq
+2017-12-18 00:32:20.435 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table deal drop foreign key FKspl0n530r3dkep2i9cuui9ubq
+2017-12-18 00:32:20.436 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'ab373.deal' doesn't exist
+Hibernate: alter table deal_dealproduct drop foreign key FK7q7hremfuxnhfwyrrtwmfv6a9
+2017-12-18 00:32:20.437 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table deal_dealproduct drop foreign key FK7q7hremfuxnhfwyrrtwmfv6a9
+2017-12-18 00:32:20.437 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'ab373.deal_dealproduct' doesn't exist
+Hibernate: alter table deal_dealproduct drop foreign key FK5hx82dxcnv7edie5ixigv5r0d
+2017-12-18 00:32:20.438 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table deal_dealproduct drop foreign key FK5hx82dxcnv7edie5ixigv5r0d
+2017-12-18 00:32:20.438 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'ab373.deal_dealproduct' doesn't exist
+Hibernate: alter table module drop foreign key FKa2x0a9sd0c0wsf3in8owxrvyx
+2017-12-18 00:32:20.439 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table module drop foreign key FKa2x0a9sd0c0wsf3in8owxrvyx
+2017-12-18 00:32:20.439 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'ab373.module' doesn't exist
+Hibernate: alter table userid drop foreign key FKey88pw7i2lvxebj0e06atnc4b
+2017-12-18 00:32:20.440 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table userid drop foreign key FKey88pw7i2lvxebj0e06atnc4b
+2017-12-18 00:32:20.441 ERROR 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'ab373.userid' doesn't exist
+Hibernate: drop table if exists deal
+Hibernate: drop table if exists deal_dealproduct
+Hibernate: drop table if exists department
+Hibernate: drop table if exists hibernate_sequences
+Hibernate: drop table if exists module
+Hibernate: drop table if exists product
+Hibernate: drop table if exists role
+Hibernate: drop table if exists userid
+Hibernate: create table deal (user_id integer not null, deal_discount double precision not null, deal_end_date tinyblob, deal_start_date tinyblob not null, product_product_id integer, primary key (user_id))
+Hibernate: create table deal_dealproduct (deal_user_id integer not null, dealproduct_product_id integer not null, primary key (deal_user_id, dealproduct_product_id))
+Hibernate: create table department (dept_code varchar(255) not null, dept_name varchar(255) not null, primary key (dept_code))
+Hibernate: create table hibernate_sequences (sequence_name varchar(255) not null, sequence_next_hi_value bigint, primary key (sequence_name))
+Hibernate: create table module (module_code varchar(255) not null, module_credits integer not null, module_title varchar(255) not null, module_dept varchar(255), primary key (module_code))
+Hibernate: create table product (product_id integer not null, product_description varchar(255) not null, product_name varchar(255), product_price double precision not null, primary key (product_id))
+Hibernate: create table role (id integer not null, role varchar(255) not null, primary key (id))
+Hibernate: create table userid (id integer not null, enabled integer not null, fornames varchar(255), lastnames varchar(255), login varchar(255) not null, password varchar(255) not null, password2 varchar(255), user_type varchar(255), role integer, primary key (id))
+Hibernate: alter table deal_dealproduct add constraint UK_ljxq17vvukh4k3xmv0nji20jf unique (dealproduct_product_id)
+Hibernate: alter table deal add constraint FKspl0n530r3dkep2i9cuui9ubq foreign key (product_product_id) references product (product_id)
+Hibernate: alter table deal_dealproduct add constraint FK7q7hremfuxnhfwyrrtwmfv6a9 foreign key (dealproduct_product_id) references product (product_id)
+Hibernate: alter table deal_dealproduct add constraint FK5hx82dxcnv7edie5ixigv5r0d foreign key (deal_user_id) references deal (user_id)
+Hibernate: alter table module add constraint FKa2x0a9sd0c0wsf3in8owxrvyx foreign key (module_dept) references department (dept_code)
+Hibernate: alter table userid add constraint FKey88pw7i2lvxebj0e06atnc4b foreign key (role) references role (id)
+2017-12-18 00:32:20.647  INFO 47661 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-12-18 00:32:20.700  INFO 47661 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-18 00:32:21.188  INFO 47661 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_
+Hibernate: select department0_.dept_code as dept_cod1_2_1_, department0_.dept_name as dept_nam2_2_1_, modulelist1_.module_dept as module_d4_3_3_, modulelist1_.module_code as module_c1_3_3_, modulelist1_.module_code as module_c1_3_0_, modulelist1_.module_credits as module_c2_3_0_, modulelist1_.module_title as module_t3_3_0_ from department department0_ left outer join module modulelist1_ on department0_.dept_code=modulelist1_.module_dept where department0_.dept_code=?
+Hibernate: insert into department (dept_name, dept_code) values (?, ?)
+Hibernate: select department0_.dept_code as dept_cod1_2_1_, department0_.dept_name as dept_nam2_2_1_, modulelist1_.module_dept as module_d4_3_3_, modulelist1_.module_code as module_c1_3_3_, modulelist1_.module_code as module_c1_3_0_, modulelist1_.module_credits as module_c2_3_0_, modulelist1_.module_title as module_t3_3_0_ from department department0_ left outer join module modulelist1_ on department0_.dept_code=modulelist1_.module_dept where department0_.dept_code=?
+Hibernate: insert into department (dept_name, dept_code) values (?, ?)
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_ where department0_.dept_code=?
+Infomatits
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_ where department0_.dept_code=?
+Engineering
+Hibernate: select module0_.module_code as module_c1_3_0_, module0_.module_credits as module_c2_3_0_, module0_.module_title as module_t3_3_0_ from module module0_ where module0_.module_code=?
+Hibernate: insert into module (module_credits, module_title, module_code) values (?, ?, ?)
+Hibernate: select module0_.module_code as module_c1_3_0_, module0_.module_credits as module_c2_3_0_, module0_.module_title as module_t3_3_0_ from module module0_ where module0_.module_code=?
+Hibernate: insert into module (module_credits, module_title, module_code) values (?, ?, ?)
+Hibernate: select module0_.module_code as module_c1_3_0_, module0_.module_credits as module_c2_3_0_, module0_.module_title as module_t3_3_0_ from module module0_ where module0_.module_code=?
+Hibernate: insert into module (module_credits, module_title, module_code) values (?, ?, ?)
+Hibernate: select module0_.module_code as module_c1_3_0_, module0_.module_credits as module_c2_3_0_, module0_.module_title as module_t3_3_0_ from module module0_ where module0_.module_code=?
+Hibernate: insert into module (module_credits, module_title, module_code) values (?, ?, ?)
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+CO2001INF10User Interface and Hci
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+CO2006INF20Software Engineering and System Devolepment
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+CO2011INF10Automata, Language and Computation
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+CO2012INF20Automata, Language and Computation
+2017-12-18 00:32:21.501  INFO 47661 --- [    Test worker] eMarket.CheckpointSpringDataTests        : Started CheckpointSpringDataTests in 3.95 seconds (JVM running for 6.046)
+2017-12-18 00:32:21.577  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@3e213c4b, testMethod = $spock_feature_0_0@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_ where department0_.dept_code=?
+2017-12-18 00:32:21.822  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@3e213c4b, testMethod = $spock_feature_0_0@CheckpointSpringDataTests, testException = Condition not satisfied:
+
+d.getName() == deptName
+| |         |  |
+| Infomatits|  Informatics
+|           false
+|           2 differences (81% similarity)
+|           Info(-)mati(t)s
+|           Info(r)mati(c)s
+eMarket.department.Department@151eee8b
+, mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.831  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@77bd9d1b, testMethod = $spock_feature_0_0@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_ where department0_.dept_code=?
+2017-12-18 00:32:21.843  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@77bd9d1b, testMethod = $spock_feature_0_0@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.850  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@61bb6944, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+2017-12-18 00:32:21.862  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@61bb6944, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  User Interfaces and HCI
+| |          false
+| |          3 differences (86% similarity)
+| |          User Interface(-) and H(ci)
+| |          User Interface(s) and H(CI)
+| User Interface and Hci
+eMarket.department.Module@7148dfec
+, mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.868  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@4560d52c, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+2017-12-18 00:32:21.876  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@4560d52c, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  Software Engineering and System Development
+| |          false
+| |          2 differences (95% similarity)
+| |          Software Engineering and System Dev(o)l(e)pment
+| |          Software Engineering and System Dev(e)l(o)pment
+| Software Engineering and System Devolepment
+eMarket.department.Module@3f9fe555
+, mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.882  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@14d3086, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+2017-12-18 00:32:21.889  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@14d3086, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  Automata, Languages and Computation
+| |          false
+| |          1 difference (97% similarity)
+| |          Automata, Language(-) and Computation
+| |          Automata, Language(s) and Computation
+| Automata, Language and Computation
+eMarket.department.Module@48ed6d06
+, mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.894  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@4c6faef9, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select module0_.module_code as module_c1_3_, module0_.module_credits as module_c2_3_, module0_.module_title as module_t3_3_ from module module0_ where module0_.module_code=?
+2017-12-18 00:32:21.904  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@4c6faef9, testMethod = $spock_feature_0_1@CheckpointSpringDataTests, testException = Condition not satisfied:
+
+d.getTitle() == modTitle
+| |          |  |
+| |          |  Software Project Management and Professionalism
+| |          false
+| |          1 difference (97% similarity)
+| |          Soft(-)are Project Management and Professionalism
+| |          Soft(w)are Project Management and Professionalism
+| Softare Project Management and Professionalism
+eMarket.department.Module@6e8f3810
+, mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.910  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@4ea1df9c, testMethod = $spock_feature_0_2@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_ where department0_.dept_code=?
+Hibernate: select modulelist0_.module_dept as module_d4_3_0_, modulelist0_.module_code as module_c1_3_0_, modulelist0_.module_code as module_c1_3_1_, modulelist0_.module_credits as module_c2_3_1_, modulelist0_.module_title as module_t3_3_1_ from module modulelist0_ where modulelist0_.module_dept=?
+2017-12-18 00:32:21.927  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@4ea1df9c, testMethod = $spock_feature_0_2@CheckpointSpringDataTests, testException = Condition not satisfied:
+
+d.getModuleList().size() == noModules
+| |               |      |  |
+| []              0      |  4
+|                        false
+eMarket.department.Department@1e64bcb
+, mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2017-12-18 00:32:21.933  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@6c84de24, testMethod = $spock_feature_0_2@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3cebfdfe]; rollback [true]
+Hibernate: select department0_.dept_code as dept_cod1_2_, department0_.dept_name as dept_nam2_2_ from department department0_ where department0_.dept_code=?
+Hibernate: select modulelist0_.module_dept as module_d4_3_0_, modulelist0_.module_code as module_c1_3_0_, modulelist0_.module_code as module_c1_3_1_, modulelist0_.module_credits as module_c2_3_1_, modulelist0_.module_title as module_t3_3_1_ from module modulelist0_ where modulelist0_.module_dept=?
+2017-12-18 00:32:21.939  INFO 47661 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@2d54ba82 testClass = CheckpointSpringDataTests, testInstance = eMarket.CheckpointSpringDataTests@6c84de24, testMethod = $spock_feature_0_2@CheckpointSpringDataTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@243a1990 testClass = CheckpointSpringDataTests, locations = '{}', classes = '{class eMarket.EMarketApp, class eMarket.DbConfig, class eMarket.EMarketApp, class eMarket.DbConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@b916a78, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3a103e2c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@742b7f92, [ImportsContextCustomizer@204649f6 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@579acbc, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2cc1a9c5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39dd30ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.1</a> at 18-Dec-2017 00:32:22</p>
+</div>
+</div>
+</body>
+</html>
